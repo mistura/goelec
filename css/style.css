@@ -27,6 +27,13 @@
     z-index: 99;
 }
 
+.path{
+    clip-path: polygon(26% 0, 100% 0, 100% 100%, 18% 100%, 0 49%);
+}
+
+.btw{
+    justify-items: space-between;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -150,8 +157,18 @@
     background-size: cover;
 }
 
+.end{
+    margin-right: 10%;
+    text-align: left;
+    min-width: fit-content;
+}
+
 .page-header-inner {
     background: rgba(15, 23, 43, .7);
+}
+
+.page-header-inner1 {
+    background: rgba(15, 23, 43, .5);
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -162,6 +179,28 @@
     position: relative;
     margin-top: -100px !important;
     z-index: 1;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--primary); /* Change the color */
+    font-weight: bolder; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-size: 2rem;
+  }
+.li p{
+    font-size: 60px;
+}
+
+.pad{
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 
