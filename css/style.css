@@ -6,6 +6,28 @@
     --dark: #1D1D27;
 }
 
+.icoon{
+  color: var(--primary);
+}
+.icoon:hover{
+  color: #777777;
+}
+
+.dropdown-div{
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  min-width: 500px;
+}
+
+@media (max-width: 800px) {
+  .dropdown-div{
+    max-width: fit-content;
+  }
+}
+
+
+
 .logo{
     width: 50%;
     height: 90%;
